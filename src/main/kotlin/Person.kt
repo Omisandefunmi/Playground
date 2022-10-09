@@ -1,4 +1,4 @@
-class Person(var firstName: String = "king", val lastName: String = "oba") {
+class Person(var firstName: String = "king", var lastName: String = "oba") {
     init {
         println("New instance of person has been created")
     }
