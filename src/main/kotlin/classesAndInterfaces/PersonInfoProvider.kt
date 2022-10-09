@@ -6,7 +6,7 @@ interface PersonInfoProvider {
     }  //Kotlin allows interfaces to provide default implementation
 }
 
-class BasicInfoProvider: PersonInfoProvider, SessionInfoProvider {
+open class BasicInfoProvider: PersonInfoProvider, SessionInfoProvider {
     override val informant: String
         get() = "Basic information Provider"
 
